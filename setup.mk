@@ -4,7 +4,6 @@ $(call inherit-product, vendor/motorola-dolby/dolby/dolby-vendor.mk)
 CONFIG_PATH := vendor/motorola-dolby/dolby
 
 # Audio props
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 TARGET_EXCLUDES_AUDIOFX := true
 
 # HIDL
