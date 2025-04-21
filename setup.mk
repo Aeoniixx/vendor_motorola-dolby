@@ -10,11 +10,6 @@ TARGET_EXCLUDES_AUDIOFX := true
 DEVICE_MANIFEST_FILE := $(CONFIG_PATH)/hidl/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIG_PATH)/hidl/framework_compatibility_matrix.xml
 
-# Shared libs 
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
-
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.vendor.audio_fx.current=dolby \
